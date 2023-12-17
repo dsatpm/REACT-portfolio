@@ -1,0 +1,20 @@
+.navbar {
+  width: max-content;
+  background: var(--color-nav);
+  padding: 1rem 2rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  backdrop-filter: blur(5px);
+
+  a {
+    background: transparent;
+    font-size: 1.1rem;
+    padding: .5rem;
+    cursor: pointer;
+  }
+}

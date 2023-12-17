@@ -1,0 +1,11 @@
+.socials {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	bottom: 50%;
+	font-size: 2rem;
+}

@@ -1,0 +1,39 @@
+.header {
+	height: 100%;
+
+	.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+		text-align: center;
+    height: 100%;
+    width: 100%;
+		position: relative;
+
+		.text-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+      align-items: center;
+			height: 100%;
+			width: 100%;
+			padding: 0 2rem;
+			letter-spacing: 4px;
+
+			span {
+				color: var(--color-primary);
+			}
+		}
+
+		.image-container {
+			width: 100%;
+
+			img {
+        height: 20rem;
+				width: 28rem;
+        object-fit: cover;
+			}
+		}
+	}
+}
