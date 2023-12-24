@@ -1,4 +1,5 @@
 import './header.scss';
+import Socials from './socialMedia/Socials';
 import CallToAction from './cta/CallToAction';
 import { myFace } from '../../assets';
 
@@ -25,6 +26,7 @@ const Header = () => {
 					</div>
 				</div>
 			</header>
+			<Socials />
 		</>
 	);
 };
