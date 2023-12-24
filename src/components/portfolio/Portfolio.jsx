@@ -1,5 +1,12 @@
 import './portfolio.scss';
-import { jate, mytholotek, blog, social, skinscore, eCommerce } from '../../assets';
+import {
+	jate,
+	mytholotek,
+	blog,
+	social,
+	skinscore,
+	eCommerce,
+} from '../../assets';
 
 const Portfolio = () => {
 	return (
@@ -86,7 +93,8 @@ const portfolioItems = [
 		src: skinscore,
 		link: 'https://skin-score-481d334348c9.herokuapp.com/login',
 		repo: 'https://github.com/dsatpm/SKINSCORE-social-media-app',
-		description:'Skin Score connects tattoo lovers worldwide. Rate, share, and discover the most stunning ink creations while building a community of passionate tattoo enthusiasts',
+		description:
+			'Skin Score connects tattoo lovers worldwide. Rate, share, and discover the most stunning ink creations while building a community of passionate tattoo enthusiasts',
 	},
 	{
 		id: 6,
@@ -94,8 +102,9 @@ const portfolioItems = [
 		src: eCommerce,
 		link: 'https://drive.google.com/file/d/1GJcqHnqvjoOlteuK-z9bF3-picC00xXM/view',
 		repo: 'https://github.com/dsatpm/E-COMMERCE-backend-project',
-		description: 'This backend solution provides seamless integration, secure transactions, and efficient management of your online business.',
-	}
+		description:
+			'This backend solution provides seamless integration, secure transactions, and efficient management of your online business.',
+	},
 ];
 
 export default Portfolio;
