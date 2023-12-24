@@ -7,38 +7,32 @@ const Navbar = () => {
 			<nav className='navbar'>
 				<Link
 					to='header'
-					smooth={true}
 					activeClass='active'>
 					Home
 				</Link>
 				<Link
 					to='about'
-					smooth={true}
 					offset={-70}
 					activeClass='active'>
 					About
 				</Link>
 				<Link
-					to='experience'
-					smooth={true}				
+					to='experience'		
 					activeClass='active'>
 					Experience
 				</Link>
 				<Link
-					to='services'
-					smooth={true}			
+					to='services'	
 					activeClass='active'>
 					Services
 				</Link>
 				<Link
-					to='portfolio'
-					smooth={true}				
+					to='portfolio'		
 					activeClass='active'>
 					Portfolio
 				</Link>
 				<Link
-					to='contact'
-					smooth={true}				
+					to='contact'		
 					activeClass='active'>
 					Contact
 				</Link>
