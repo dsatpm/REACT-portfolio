@@ -6,7 +6,7 @@ const Services = () => {
 			<section
 				id='services'
 				className='services'>
-          <h2>Services Offered</h2>
+          <h2>Services</h2>
 				<div className='services-container'>
 					{serviceItems.map((item) => {
 						const { id, title, description } = item;
