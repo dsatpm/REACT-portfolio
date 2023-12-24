@@ -27,7 +27,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<nav className={`navbar ${'visible' ? '' : 'hidden'}`}>
+			<nav className={`navbar ${visible ? '' : 'hidden'}`}>
 				<span>Jeremiah Haynes</span>
 				<Link
 					to='header'

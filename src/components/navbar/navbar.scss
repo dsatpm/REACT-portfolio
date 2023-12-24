@@ -1,11 +1,7 @@
 .navbar {
-
-	.hidden {
-		display: none;
-	}
 	background: var(--color-bg);
 	padding: 1rem 2rem;
-  z-index: 2;
+	z-index: 2;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -14,6 +10,7 @@
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	transition: top 300ms ease-in-out;
 
 	span {
 		font-size: 3rem;
@@ -25,4 +22,7 @@
 		padding: 0.5rem;
 		cursor: pointer;
 	}
+}
+.hidden {
+	top: -5rem;
 }
