@@ -1,10 +1,34 @@
-import './navbar.scss';
 import { Link } from 'react-scroll';
+import { useState, useEffect } from 'react';
+import './navbar.scss';
 
 const Navbar = () => {
+	const [scrollPosition, setScrollPosition] = useState(0);
+	const [visible, setVisible] = useState(true);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollPosition = window.scrollY;
+
+			if (currentScrollPosition > scrollPosition && visible) {
+				setVisible(false);
+			} else if (currentScrollPosition < scrollPosition && !visible) {
+				setVisible(true);
+			}
+			setScrollPosition(currentScrollPosition);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [scrollPosition, visible]);
+
 	return (
 		<>
-			<nav className='navbar'>
+			<nav className={`navbar ${'visible' ? '' : 'hidden'}`}>
+				<span>Jeremiah Haynes</span>
 				<Link
 					to='header'
 					activeClass='active'>
@@ -17,17 +41,17 @@ const Navbar = () => {
 					About
 				</Link>
 				<Link
-					to='services'	
+					to='services'
 					activeClass='active'>
 					Services
 				</Link>
 				<Link
-					to='portfolio'		
+					to='portfolio'
 					activeClass='active'>
 					Portfolio
 				</Link>
 				<Link
-					to='contact'		
+					to='contact'
 					activeClass='active'>
 					Contact
 				</Link>
