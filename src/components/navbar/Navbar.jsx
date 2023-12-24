@@ -17,11 +17,6 @@ const Navbar = () => {
 					About
 				</Link>
 				<Link
-					to='experience'		
-					activeClass='active'>
-					Experience
-				</Link>
-				<Link
 					to='services'	
 					activeClass='active'>
 					Services
